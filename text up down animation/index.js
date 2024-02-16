@@ -9,7 +9,7 @@ links.forEach(link => {
       }
     });
     tl.to(link.children, {
-      duration: .2,
+      duration: .4,
       y: 112,
     })
   })
@@ -22,7 +22,7 @@ links.forEach(link => {
       }
     });
     tl.to('.li', {
-      duration: .2,
+      duration: .4,
       y: 0,
     })
   })
