@@ -18,7 +18,7 @@ links.forEach(link => {
     console.log('mousings');
     let tl = gsap.timeline({
       defaults: {
-        ease: 'linear'
+        ease: 'power2.out'
       }
     });
     tl.to('.li', {
