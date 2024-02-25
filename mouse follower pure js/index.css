@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+button {
+  padding: 20px 32px;
+  background-color: aquamarine;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.mf {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: black;
+  border: 1px solid grey;
+  opacity: 0;
+  transition-duration: 80ms;
+  transition-timing-function: ease-out;
+  pointer-events: none;
+}
