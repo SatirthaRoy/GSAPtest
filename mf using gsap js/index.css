@@ -17,18 +17,23 @@ button {
   color: white;
   font-size: x-large;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .mf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 0;
   z-index: 999;
   height: 20px;
   width: 20px;
   border-radius: 100%;
-  background-color: black;
-  border: 1px solid grey;
+  /* background-color: black; */
+  border: 1px solid black;
   opacity: 0;
+  transform: translate(-50%, -50%);
   transition-duration: 80ms;
   transition-timing-function: ease-out;
   pointer-events: none;
