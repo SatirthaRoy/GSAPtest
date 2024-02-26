@@ -24,17 +24,31 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.456);
   position: absolute;
   top: 0;
-  z-index: 999;
-  height: 20px;
-  width: 20px;
+  z-index: 100;
+  height: 80px;
+  width: 80px;
   border-radius: 100%;
-  /* background-color: black; */
-  border: 1px solid black;
-  opacity: 0;
+  background-color: black;
   transform: translate(-50%, -50%);
-  transition-duration: 80ms;
-  transition-timing-function: ease-out;
   pointer-events: none;
+}
+
+.txt {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: large;
+  top: 0;
+  z-index: 101;
+  background-color: white;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
 }
