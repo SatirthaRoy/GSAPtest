@@ -24,23 +24,25 @@
 .click:hover {
   border: 1px solid grey;
   scale: 1.1;
-  transition: all  .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .menu {
   background-color: green;
   color: white;
-  font-size: 100px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
-  height: 50px;
-  width: 50px;
+  height: 100vh;
+  width: 50vw;
   border-radius: 50%;
   position: absolute;
   top: 0;
+  scale: 0;
   z-index: 5;
+  overflow: hidden;
+  transform-origin: top left;
 }
 
 .close {
@@ -56,13 +58,44 @@
   opacity: 0;
 }
 
-ul {
+.menu-container {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-li {
-  list-style-type: none;
+.menu-items {
+  font-size: 100px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  cursor: pointer;
+}
+
+.menu-text {
+  transform: translateY(110px);
+}
+
+.menu-text {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.indicator {
+  width: 100%;
+  height: 10px;
+  background-color: white;
+  transform: scaleX(0);
+}
+
+@media screen and (max-width: 1000px) {
+  .menu-items {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-items {
+    font-size: 30px;
+  }
 }
