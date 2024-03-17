@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+
+.gradient1 {
+  filter: blur(80px);
+  position: absolute;
+  top: 0;
+  height: 110px;
+  width: 110px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.circle {
+  scale: 0;
+  background-color: white;
+  position: absolute;
+  filter: blur(5px);
+  top: 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
