@@ -9,3 +9,21 @@
 // },
 //   scale: '2'
 // })
+
+
+gsap.to('.ball',
+  {
+    scrollTrigger: {
+      trigger: '.ball',
+      start: 'center 400px',
+      end: 'bottom top',
+      scrub: .5,
+      pin: true,
+      markers: true
+    },
+
+    scale: 0,
+    y: -200
+
+  }
+)
